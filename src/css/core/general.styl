@@ -1,0 +1,36 @@
+/*
+ * General Config
+ */
+
+$transition-default = $transition.time.default
+$transition-slow = $transition.time.slow
+$transition-fast = $transition.time.fast
+
+$body-color = $color.white
+$body-background = $color.white
+
+
+/*
+ * General Styles
+ */
+
++selection()
+  color $body-color
+  background $body-bg
+
+body
+  color $body-color
+  background $body-background
+  background-size cover
+
+  @media $from.lg
+    background $body-background
+
+h1
+  animation $transition-slow fadeInRight
+
+h2
+  animation $transition-slow fadeInLeft
+
+p
+  animation $transition-slow fadeInUp
